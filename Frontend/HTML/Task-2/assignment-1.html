@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ass 1</title>
+    </head>
+    <body>
+        <form action="test.py" method="post">
+            <input hidden value="12345">
+            <div>
+                <label>User Name</label>
+                <br>
+                <input type="text" required placeholder="write your user name" name="userName">
+            </div>
+            <hr>
+            <div>
+                <label>Subject</label>
+                <br>
+                <input type="text" placeholder="write what you need" name="sub">
+            </div>
+            <hr>
+            <div>
+                <label>Email</label>
+                <br>
+                <input type="email" required placeholder="name@gmail.com" name="email">
+            </div>
+            <hr>
+            <div>
+                <label>Password</label>
+                <br>
+                <input type="password" placeholder="Use A,a,1,@,$,%,#..." name="password">
+            </div>
+            <hr>
+            <div>
+                <label>Mobile</label>
+                <br>
+                <input type="tel" placeholder="0123 4567 890" name="tel">
+            </div>
+            <hr>
+            <input type="reset" value="Empty Form" >
+            <input type="submit" value="Send Data" >
+        </form>
+        <input type="range" min="100" max="500" value="400" step="50">
+    </body>
+</html>
