@@ -1,0 +1,17 @@
+.element{
+    width: 400px;
+    background-color: #EEE;
+    padding: 5px;
+    margin: 10px;
+    outline: 15px solid #EEE;
+}
+.element-1{
+    border-left: 5px solid rgb(243, 26, 145);
+}
+.element-2{
+    border-left: 5px solid rgb(214, 214, 39);
+    visibility: hidden;
+}
+.element-3{
+    border-left: 5px solid rgb(12, 150, 143);
+}

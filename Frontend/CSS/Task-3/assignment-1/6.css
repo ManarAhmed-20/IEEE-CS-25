@@ -1,0 +1,19 @@
+/* Not Best Practice */
+.USERNAME {
+}
+
+/* Not Best Practice */
+.UserName {
+}
+
+/* Best Practice */
+.user-name {
+}
+
+/* Best Practice */
+.userName {
+}
+
+/* Best Practice */
+.usernameprofile {
+}
