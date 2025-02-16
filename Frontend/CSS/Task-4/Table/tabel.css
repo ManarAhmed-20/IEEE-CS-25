@@ -1,0 +1,33 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+th, td {
+    padding: 12px;
+}
+tbody tr:nth-child(odd){
+    background-color: #ece7e2;
+}
+.status {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+.progress {
+    background-color: hsl(134, 61%, 41%);
+    color: white;
+}
+
+.open {
+    background-color: hsl(45, 100%, 51%);
+    color: black;
+}
+
+.on-hold {
+    background-color: hsl(354, 70%, 54%);
+    color: white;
+}

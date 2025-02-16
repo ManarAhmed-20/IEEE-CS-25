@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 140px;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 1px red,
+                 8px 8px 1px blue,
+                 12px 12px 1px purple;
+}
+a{
+    font-size: 100px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(8, 128, 112);
+    padding: 40px 60px;
+    border: 0px;
+    border-bottom: 30px;
+    border-color: rgb(1, 68, 60);
+    border-style: solid;
+}
