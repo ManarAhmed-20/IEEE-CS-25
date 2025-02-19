@@ -1,0 +1,26 @@
+p{
+    background-color: #eee;
+    width: 350px;
+    padding: 10px;
+    margin-left: 150px;
+    position: relative;
+}
+p::before{
+    content: attr(data-person);
+    position: absolute;
+    left: -100px;
+    background-color: #eee;
+    top:0px;
+    display: inline-block;
+    padding: 10px;
+    width: 48px;
+}
+p::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(252, 3, 148);
+}

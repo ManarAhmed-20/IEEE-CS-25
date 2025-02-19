@@ -1,0 +1,64 @@
+:root{
+    --mainColor: rgb(209, 208, 208);
+    --mainPadding: 15px;
+}
+*{box-sizing: border-box;}
+.page{
+    width: 1000px;
+    height: 600px;
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: var(--mainPadding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header , main , footer{
+    width: 100%;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    background-color: var(--mainColor);
+    padding: var(--mainPadding);
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    width: 88.5%;
+    height: 100%;
+    padding: var(--mainPadding);
+    background-color: var(--mainColor);
+    display:flex;
+    justify-content: end;
+    align-items: center;
+}
+li{
+    list-style: none;
+    margin-left:calc(var(--mainPadding)) ;
+}
+main{
+    height: 75% ;
+    align-items: start;
+}
+.content{
+    background-color: var(--mainColor);
+    padding: var(--mainPadding);
+    height: 100%;
+    width: 70%;
+}
+.sidebar{
+    background-color: var(--mainColor);
+    padding: var(--mainPadding);
+    height: 100%;
+    width: 28.5%;
+}
+footer{
+    background-color: var(--mainColor);
+    padding: var(--mainPadding);
+}
