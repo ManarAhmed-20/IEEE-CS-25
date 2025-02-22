@@ -1,0 +1,33 @@
+:root{
+    --color:#009688;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+h1{
+   color: white;
+   padding:10px 25px;
+   background-color: var(--color);
+   position: relative;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    background-color:white;
+    width: 4px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transform: skewx(15deg);
+}
+h1::before{
+    content: "";
+    position: absolute;
+    background-color:var(--color);
+    width: 20px;
+    height: 100%;
+    top: 0px;
+    left: -10px;
+    transform: skewx(15deg);
+}

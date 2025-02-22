@@ -1,0 +1,41 @@
+div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: #eee;
+    
+    transform:translate(550px,200px);
+    font-weight: bold;
+    
+}
+div::before{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 15px  #E91E63;
+    border-left-color: white;
+    transition-duration: 0.5s;
+}
+div::after{
+    content: "";
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: solid 15px  #2196F3;
+    border-right-color: white;
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+}
+div:hover::before{
+    transform: rotate(360deg);
+}
+div:hover::after{
+    transform: rotate(360deg);
+}

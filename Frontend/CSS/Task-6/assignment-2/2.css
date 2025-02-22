@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #03A9F4;
+    grid-column: 1/-1;
+    padding: 10px;
+}
+header::before{
+    content: "header";
+}
+section{
+    background-color: #FF5722;
+    padding: 10px;
+}
+section::before{
+    content: "section";
+}
+aside{
+    background-color: #9E9E9E;
+    padding: 10px;
+}
+aside::before{
+    content: "side";
+}
+footer{
+    background-color: #4CAF50;
+    grid-column: 1/-1;
+    padding: 10px;
+}
+footer::before{
+    content: "footer";
+}
+.layout{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background-color: aqua;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100px 1fr 100px;
+}
+*{
+    color: white;
+    position: relative;
+}
