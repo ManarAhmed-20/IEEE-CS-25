@@ -1,0 +1,54 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 5px solid #2196f3;
+    position: relative;
+    border-left-color: transparent;
+    animation-duration: 2s;
+    animation-name: loading;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+}
+div:hover{
+    animation-play-state: running;
+}
+div::after{
+    content: "";
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    right:-12px;
+    top: -12px;
+    border: 5px solid yellow;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-right-color: transparent;
+    animation-delay: 0.3s;
+    
+}
+div::before{
+    content: "";
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    right:-19px;
+    top: -19px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    animation-delay: 0.75s;
+}
+@keyframes loading {
+    to{
+        transform: rotate(360deg);
+    }
+}
