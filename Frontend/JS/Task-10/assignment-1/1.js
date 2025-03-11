@@ -1,0 +1,3 @@
+/* The first code will not work because it does not have access to html elements
+ The second code will work because the page has been loaded so it has access to html elements
+ The third code will work because it is after the html */
