@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3=>js</title>
+</head>
+
+<body>
+    <script>
+        let arrOne = ["C", "D", "X"];
+        let arrTwo = ["A", "B", "Z"];
+        let finalArr = [];
+
+        // Write One Single Line Of Code
+        
+        // arrOne.reverse();
+        // arrTwo.reverse();
+        // let first = arrTwo.shift()
+        // finalArr =arrOne.concat(arrTwo);
+        // finalArr.unshift(first)
+
+        // finalArr = arrTwo.reverse().splice(arrTwo.indexOf("Z"),arrOne.reverse());
+
+        finalArr = (arrOne.concat(arrTwo)).sort().reverse();
+        console.log(finalArr); // ["Z", "X", "D", "C", "B", "A"]
+    </script>
+</body>
+
+</html>

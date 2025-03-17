@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+
+<body>
+    <script>
+        let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+        let letter = "a";
+        let one =letter.length;
+
+        for (let i = one-one; i < friends.length; i++) {
+            if(friends[i].toLowerCase().startsWith(letter)) continue;
+            console.log(`"${one} => ${friends[i]}"`);
+            one++;
+        }
+        // Output
+        "1 => Sayed"
+        "2 => Eman"
+        "3 => Mahmoud"
+        "4 => Osama"
+        "5 => Sameh"
+    </script>
+</body>
+
+</html>
