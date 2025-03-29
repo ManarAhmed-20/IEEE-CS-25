@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2=>js</title>
+</head>
+
+<body>
+    <script>
+        function getAbsSum(arr) {
+            if (arr.length > 1) {
+                let sum = arr.reduce(function (acc, curr) {
+                    return Math.abs(acc) + Math.abs(curr);
+                });
+                return sum;
+            }
+            else return Math.abs(arr[0]);
+
+        }
+    </script>
+</body>
+
+</html>

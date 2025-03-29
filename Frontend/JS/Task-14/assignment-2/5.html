@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5=>js</title>
+</head>
+
+<body>
+    <img decoding="async" src="#" alt="One" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" alt="Three" />
+    <img decoding="async" src="#" />
+    <img decoding="async" src="#" />
+
+    <script>
+        let size =document.getElementsByTagName("img").length;
+        for (let index = 0; index < size; index++) {
+            let myImg = document.getElementsByTagName("img")[index];
+            myImg.hasAttribute("alt")? myImg.setAttribute("alt","Old") : myImg.setAttribute("alt","Elzero New"); 
+            console.log(myImg)
+        }
+    </script>
+</body>
+</html>

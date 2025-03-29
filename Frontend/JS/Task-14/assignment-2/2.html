@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2=>js</title>
+</head>
+
+<body>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <div>
+        <img decoding="async" src="#" alt="" />
+    </div>
+    <script>
+
+        for (let index = 0; index < document.body.children.length; index++) {
+            let myImg = document.getElementsByTagName("img")[index];
+            myImg.setAttribute("Src", "https://elzero.org/wp-content/themes/elzero/imgs/logo.png");
+            myImg.setAttribute("alt", "Elzero Logo");
+            console.log(myImg);
+        }
+
+    </script>
+</body>
+
+</html>

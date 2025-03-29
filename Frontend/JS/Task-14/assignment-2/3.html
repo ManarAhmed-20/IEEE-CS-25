@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3=>js</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="number" name="dollar" placeholder="USD Dollar" />
+        <div class="result">{0} USD Dollar = {0} Egyptian Pound</div>
+      </form>
+    <script>
+        let myInput=document.getElementsByTagName("input")[0];
+        let myDiv=document.getElementsByClassName("result")[0];
+
+        myInput.addEventListener("input", function () {
+            let dollarAmount = parseFloat(myInput.value);
+
+            if (!isNaN(dollarAmount) && dollarAmount > 0) {
+                myDiv.textContent = `${dollarAmount} USD Dollar = ${(dollarAmount * 15.6).toFixed(2)} Egyptian Pound`;
+            }
+        });
+        
+    </script>
+</body>
+
+</html>
