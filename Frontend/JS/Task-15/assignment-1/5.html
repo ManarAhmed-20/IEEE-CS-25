@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5=>js</title>
+</head>
+
+<body>
+    <div>Element</div>
+    <span>Element</span>
+    <p>Element</p>
+    <article>Element</article>
+    <section>Element</section>
+
+    <script>
+        // console.log(document.body.children);
+        let n =document.body.children.length;
+        for (let index = 0; index < n; index++) {
+            let element= document.body.children[index];
+            element.addEventListener("click",function(){
+                console.log(`"This Is ${element.tagName}"`);
+            })
+        }
+    </script>
+</body>
+
+</html>

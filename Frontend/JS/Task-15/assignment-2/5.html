@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5=>js</title>
+</head>
+
+<body>
+    <div>10</div>
+    <script>
+        let num =document.querySelector("div");
+        function counting(){
+            num.innerHTML -=1;
+            if(num.innerHTML === "0")
+                {clearInterval(count);
+                window.open("https://elzero.org/","_blank","width=800,height=1000,top=50,left=200");}
+        }
+        let count =setInterval(counting,1000);
+    </script>
+</body>
+</html>

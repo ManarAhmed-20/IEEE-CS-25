@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3=>js</title>
+</head>
+
+<body>
+    <div class="our-element">Our Element</div>
+    <p>Paragraph</p>
+    <script>
+        let p=document.querySelector("p");
+        let element=document.querySelector(".our-element");
+
+        window.addEventListener("load",function(){
+            p.remove();
+        });
+        let start =document.createElement("div");
+        start.textContent="start";
+        start.setAttribute("class","start");
+        start.setAttribute("title","Start Element");
+        start.setAttribute("data-value","start");
+
+        let end =document.createElement("div");
+        end.textContent="end";
+        end.setAttribute("class","end");
+        end.setAttribute("title","end Element");
+        end.setAttribute("data-value","end");
+
+        element.parentElement.append(end);
+        element.parentElement.prepend(start);
+        
+    </script>
+</body>
+
+</html>
