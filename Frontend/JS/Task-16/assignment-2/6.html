@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+
+<body>
+    <script>
+        let chosen = 3;
+
+        let myFriends = [
+            { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
+            { title: "Ahmed", age: 25, available: false, skills: ["Python", "Django"] },
+            { title: "Sayed", age: 33, available: true, skills: ["PHP", "Laravel"] },
+        ];
+
+        // Write Your Code Here
+        let [osama,ahmed,Sayed]=myFriends;
+        function findPerson(ch){
+            if(ch===1) return osama;
+            else if(ch===2) return ahmed;
+            else if(ch===3) return Sayed;
+        }
+        let {title,age,available,skills:[ ,s]}=findPerson(chosen);
+        console.log(title);
+        console.log(age);
+        console.log(available?"Available":"Not Available");
+        console.log(s);
+        // // If chosen === 1
+
+        // "Osama"
+        // 39
+        // "Available"
+        // "CSS"
+
+        // // If chosen === 2
+
+        // "Ahmed"
+        // 25
+        // "Not Available"
+        // "Django"
+
+        // // If chosen === 3
+
+        // "Sayed"
+        // 33
+        // "Available"
+        // "Laravel"
+    </script>
+</body>
+
+</html>

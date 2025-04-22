@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+.container{
+    width: 800px;
+    height: auto;
+    background-color: rgb(253, 221, 226);
+    box-shadow: rgba(255, 27, 61, 0.452) 0px 10px 36px 0px, rgba(255, 27, 61, 0.63) 0px 0px 0px 1px;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 20px;
+}
+h1,label,h3{
+    color:  rgb(207, 34, 60);
+    font-weight: bold;
+}
+input{
+    width: 45%;
+    height: 25px;
+    border: none;
+    border-radius: 4px;
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#btn{
+    width: 60px;
+    background-color: rgb(207, 34, 60);
+    color: #fff;
+    font-weight: bold;
+}
+#notesList{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    gap: 10px;
+}
+.note{
+    width: 99%;
+    background-color: rgb(253, 221, 226);
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+}
