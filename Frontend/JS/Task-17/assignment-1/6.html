@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6</title>
+</head>
+
+<body>
+    <script>
+        let chars = ["Z", "Y", "A", "D", "E", 10, 1];
+        let count = 0;
+        let nums=[];
+        let str=[];
+
+        for (let i = 0; i < chars.length; i++) {
+            if (!isNaN(chars[i])) {
+                count++;
+                nums.push(chars[i]);
+            }
+            else str.push(chars[i]);
+        }
+        chars=[...nums,...str]
+        console.log(chars.copyWithin(0,count, count*2))
+    </script>
+</body>
+
+</html>

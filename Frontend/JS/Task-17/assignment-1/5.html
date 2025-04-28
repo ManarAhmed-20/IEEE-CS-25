@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5=>js</title>
+</head>
+
+<body>
+    <script>
+        let theName = "Elzero";
+        console.log([...theName]);
+        console.log(theName.split(""));
+        console.log(Array.from(theName))
+        let arr=[];
+        for(let i=0;i<theName.length;i++){
+            arr.push(theName[i]);
+        }
+        console.log(arr);
+        let emptyArr=[];
+        console.log(Object.assign(emptyArr,theName))
+
+    </script>
+</body>
+
+</html>
