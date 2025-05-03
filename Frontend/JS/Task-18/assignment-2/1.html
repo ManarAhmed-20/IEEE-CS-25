@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>1</title>
+</head>
+
+<script>
+  let dateNow =new Date();
+  let birthDay=new Date("aug 3 2004");
+  let diff= dateNow - birthDay;
+  let s=diff/1000;
+  let m=s/60;
+  let h=m/60;
+  let d=h/24;
+  let mon=d/30;
+  let y=mon/12;
+  console.log(`${s} Seconds`);
+  console.log(`${m} Minutes`);
+  console.log(`${h} Hours`);
+  console.log(`${d} Days`);
+  console.log(`${mon} Months`);
+  console.log(`${y} Years`);
+</script>
+
+</html>
