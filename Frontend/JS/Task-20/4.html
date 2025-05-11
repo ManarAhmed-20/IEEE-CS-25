@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+    <script>
+        let myRequest = new XMLHttpRequest();
+        myRequest.open("GET", "articles.json", true);
+        myRequest.send();
+        myRequest.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                let mainData = JSON.parse(this.responseText);
+
+                let dataDiv = document.createElement("div");
+
+                for (let i = 0; i < mainData.length; i++) {
+                    let container = document.createElement("div");
+                    let title = document.createElement("h2");
+                    let article = document.createElement("p");
+                    let author = document.createElement("p");
+                    let category = document.createElement("p");
+
+                    title.textContent = mainData[i].title;
+                    article.textContent = mainData[i].content;
+                    author.textContent = mainData[i].authorName;
+                    category.textContent = mainData[i].category;
+
+                    container.appendChild(title);
+                    container.appendChild(article);
+                    container.appendChild(author);
+                    container.appendChild(category);
+
+                    dataDiv.appendChild(container);
+                }
+                document.body.appendChild(dataDiv);
+            }
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "id":1,
+    "authorName":"ahmed",
+    "category":"sport",
+    "title":"Title 1",
+    "content":"bla bla bla "
+  },
+  {
+    "id":2,
+    "authorName":"mohamed",
+    "category":"sport",
+    "title":"Title 2",
+    "content":"bla bla bla "
+  },
+  {
+    "id":3,
+    "authorName":"abdulah",
+    "category":"sport",
+    "title":"Title 3",
+    "content":"bla bla bla "
+  },
+  {
+    "id":4,
+    "authorName":"omar",
+    "category":"sport",
+    "title":"Title 4",
+    "content":"bla bla bla "
+  },
+  {
+    "id":5,
+    "authorName":"ali",
+    "category":"sport",
+    "title":"Title 4",
+    "content":"bla bla bla "
+  }
+]
